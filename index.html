@@ -3,21 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Weather App</title>
   </head>
   <body>
-    <h1>Welcome to the Weather App</h1>
-    <footer>
-      Codes by
-      <a href="https://github.com/nanaenolab" target="_blank"> Nanae Itoi</a>
-      , code hosted on
-      <a href="https://github.com/nanaenolab/weather-app" target="_blank">
-        Github
-      </a>
-      and website hosted on
-      <a href="https://tenki-shecodes-app.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form>
+          <input type="search" placeholder="Enter a city... " required />
+          <input type="submit" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div>
+          <h1>New York</h1>
+          <p>
+            Wednesday 6:00 PM, Clear with periodic clouds
+            <br />
+            Humidity: 42%, Wind: 11 mph
+          </p>
+        </div>
+        <div>🌤️ 9 °C</div>
+      </main>
+
+      <footer>
+        Codes by
+        <a href="https://github.com/nanaenolab" target="_blank"> Nanae Itoi</a>
+        , code hosted on
+        <a href="https://github.com/nanaenolab/weather-app" target="_blank">
+          Github
+        </a>
+        and website hosted on
+        <a href="https://tenki-shecodes-app.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>

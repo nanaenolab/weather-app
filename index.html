@@ -19,21 +19,23 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city... " required />
-          <input type="submit" value="Search" />
+        <form class="search-from">
+          <input type="search" placeholder="Enter a city... " required class="search-input"/>
+          <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
       <main>
+        <div class="weather-app-data">
         <div>
-          <h1>New York</h1>
-          <p>
+          <h1 class="city-name">New York</h1>
+          <p class="city-weather">
             Wednesday 6:00 PM, Clear with periodic clouds
             <br />
-            Humidity: 42%, Wind: 11 mph
+            Humidity: <strong>42%</strong>, Wind: <strong>11 mph</strong>
           </p>
         </div>
-        <div>🌤️ 9 °C</div>
+        <div class="weather_temp_container"><div class="weather_emoji">🌤️</div> <div class="weather-temp">9</div> <div class="weather_unit">°C</div></div>
+        </div>
       </main>
 
       <footer>

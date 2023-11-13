@@ -19,15 +19,15 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-from">
-          <input type="search" placeholder="Enter a city... " required class="search-input"/>
+        <form class="search-from" id="search-form">
+          <input type="search" placeholder="Enter a city... " required class="search-input" id="search-input"/>
           <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
       <main>
         <div class="weather-app-data">
         <div>
-          <h1 class="city-name">New York</h1>
+          <h1 class="city-name" id="city">New York</h1>
           <p class="city-weather">
             Wednesday 6:00 PM, Clear with periodic clouds
             <br />
@@ -51,5 +51,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>

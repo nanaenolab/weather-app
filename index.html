@@ -21,21 +21,31 @@
     <div class="weather-app">
       <header>
         <form class="search-from" id="search-form">
-          <input type="search" placeholder="Enter a city... " required class="search-input" id="search-input"/>
+          <input
+            type="search"
+            placeholder="Enter a city... "
+            required
+            class="search-input"
+            id="search-input"
+          />
           <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
       <main>
         <div class="weather-app-data">
-        <div>
-          <h1 class="city-name" id="city">New York</h1>
-          <p class="city-weather">
-            Wednesday 6:00 PM, Clear with periodic clouds
-            <br />
-            Humidity: <strong>42%</strong>, Wind: <strong>11 mph</strong>
-          </p>
-        </div>
-        <div class="weather_temp_container"><div class="weather_emoji">🌤️</div> <div class="weather-temp">9</div> <div class="weather_unit">°C</div></div>
+          <div>
+            <h1 class="city-name" id="city"></h1>
+            <p class="city-weather">
+              Wednesday 6:00 PM, Clear with periodic clouds
+              <br />
+              Humidity: <strong>42%</strong>, Wind: <strong>11 mph</strong>
+            </p>
+          </div>
+          <div class="weather_temp_container">
+            <div class="weather_emoji">🌤️</div>
+            <div class="weather-temp" id="temp"></div>
+            <div class="weather_unit">°C</div>
+          </div>
         </div>
       </main>
 

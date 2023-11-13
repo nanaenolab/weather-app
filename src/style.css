@@ -49,31 +49,31 @@ main {
   line-height: 48px;
 }
 .city-weather {
-    font-size: 16px;
-    line-height: 24px;
-    color: rgb(39, 33, 66, 0.4);
-    font-weight:  500;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(39, 33, 66, 0.4);
+  font-weight: 500;
 }
 .city-weather strong {
-    color: #f65282;
+  color: #f65282;
 }
 
 .weather_temp_container {
-    display: flex;
+  display: flex;
 }
-.weather-temp{
-    font-size: 88px;
-    font-weight: bold;
-    margin-left: 10px;
+.weather-temp {
+  font-size: 88px;
+  line-height: 88px;
+  font-weight: bold;
+  margin-left: 10px;
 }
 .weather_emoji {
-    font-size: 44px;
-    margin-top: 22px;
+  width: 88px;
+  height: 88px;
 }
 .weather_unit {
-    margin-top: 16px;
-    font-size: 28px;
-
+  margin-top: 6px;
+  font-size: 28px;
 }
 footer {
   border: 1px solid #f0f9fa;

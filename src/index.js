@@ -9,6 +9,7 @@ function refreshWeather(response){
     let date = new Date(response.data.time * 1000);
     let iconElement = document.querySelector("#icon");
     
+    
     cityElement.innerHTML = response.data.city;
     tempElement.innerHTML = Math.round(temp);
     descriptionElement.innerHTML = response.data.condition.description;
@@ -42,7 +43,34 @@ function handleSearch(event){
     searchCity(searchInput.value);
 }
 
+function displayForecast(){
+        let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+        let forecastHtml = "";
+
+        days.forEach(function (day){
+            forecastHtml = 
+            forecastHtml + 
+            `  
+            <div class="weather-forecast-day">
+            <div class="weather-forecast-date">${day}</div>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                alt=""
+                width="42"
+              />
+              <div class="weather-forecast-temp">
+                <span class="temp-max">18</span>
+                <span class="temp-min">12</span>
+              </div>
+            </div>
+            `;
+        });
+        let forecastElemnt = document.querySelector("#forecast");
+        forecastElemnt.innerHTML = forecastHtml;
+
+    }
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearch);
 
-searchCity("Paris")
+searchCity("Paris");
+displayForecast();

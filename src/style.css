@@ -77,12 +77,19 @@ main {
 }
 .weather-forecast {
   margin-top: 20px;
+  display: flex;
   color: #000;
+  justify-content: space-around;
+}
+img {
+  display: block;
 }
 .weather-forecast-date {
+  text-align: center;
   font-size: 16px;
 }
 .weather-forecast-temp {
+  text-align: center;
   font-size: 13px;
 }
 .temp-min {
